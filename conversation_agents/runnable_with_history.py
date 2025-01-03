@@ -15,7 +15,8 @@ def create_runnable_with_history(runnable):
         RunnableWithMessageHistory: A runnable that supports message history.
     """
     prompt = ChatPromptTemplate.from_messages([
-        ("system", "You are a helpful AI assistant that respond to users task/question based on you knowledge and history"),
+        ("system",
+         "You are a helpful AI assistant. Use your knowledge and conversation history to provide concise and accurate responses. Keep answers brief (1-2 sentences) and avoid unnecessary details. If unsure, ask clarifying questions."),
         MessagesPlaceholder(variable_name="history"),
         MessagesPlaceholder(variable_name="input"),
     ])
