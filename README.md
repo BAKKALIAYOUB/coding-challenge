@@ -1,6 +1,6 @@
 # LangChain LLM Conversation Agent
 
-This project provides a conversational AI agent powered by LhangChain and Exposes it as REST API using FastAPI.
+This project provides a conversational AI agent powered by LangChain and Exposes it as REST API using FastAPI.
 The Agent leverages a language model (LLM) to handle user queries and maintains conversation hisotry for context-aware responses.
 
 ## Features
